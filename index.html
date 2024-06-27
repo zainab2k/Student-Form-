@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Form & ID Card Generator</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <h1>Student Form & ID Card Generator</h1>
+    <form id="registration-form">
+        
+        <div class="form-row">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name">
+        </div>
+        <div class="form-row">
+            <label for="father-name">Father Name:</label>
+            <input type="text" id="father-name" name="father-name">
+        </div>
+
+        <div class="form-row">
+            <label for="city">Select City:</label>
+            <select id="city" name="city">
+              <option value="">Select City</option>
+              <option value="Karachi">Karachi</option>
+              <option value="Lahore">Lahore</option>
+              <option value="Islamabad">Islamabad</option>
+              <option value="Peshawar">Peshawar</option>
+              <option value="Quetta">Quetta</option>
+              <option value="Multan">Multan</option>
+              <option value="Faisalabad">Faisalabad</option>
+              <option value="Sialkot">Sialkot</option>
+              <option value="Gujranwala">Gujranwala</option>
+              <option value="Hyderabad">Hyderabad</option>
+            </select>
+        </div>
+       
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-row">
+            <label for="cnic">CNIC:</label>
+            <input type="text" id="cnic" name="cnic">
+        </div>
+        <div class="form-row">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-row">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div class="form-row">
+            <label for="gender">Select Gender:</label>
+            <select id="gender" name="gender">
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="last-qualification">Last Qualification:</label>
+            <select id="last-qualification" name="last-qualification">
+                <option value="">Select Category</option>
+                <option value="Matriculation">Matriculation</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Bachelor's">Bachelor's</option>
+                <option value="Master's">Master's</option>
+                <option value="PhD">PhD</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Certification">Certification</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea>
+        </div>
+        <div class="form-row">
+            <label for="image-upload">Upload Picture:</label>
+            <input type="file" id="image-upload" name="image-upload" accept="image/jpeg, image/jpg, image/png">
+        </div>
+        <div class="form-row">
+            <button id="submit-btn" type="button">Submit</button>
+            <button id="download-id-card-btn" type="button">Download ID Card</button>
+        </div>
+      </form>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
